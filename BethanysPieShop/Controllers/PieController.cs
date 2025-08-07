@@ -14,7 +14,7 @@ public class PieController : Controller
         _pieRepository = pieRepository;
     }
 
-    // GET
+    
     public IActionResult List()
     {
         return View(_pieRepository.AllPies);
