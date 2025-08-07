@@ -1,6 +1,6 @@
 namespace BethanysPieShop.Models;
 
-public class MockCategoryRepository
+public class MockCategoryRepository : ICategoryRepository
 {
     public IEnumerable<Category> AllCategories => new List<Category>()
     {
