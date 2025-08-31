@@ -1,3 +1,4 @@
+@using System.Globalization
 @model PieListViewModel
 
 <h1>@Model.CurrentCategory</h1>
@@ -18,7 +19,7 @@
                             <a class="pie-link">@pie.Name</a>
                         </h2>
                         <h5 class="text-nowrap">
-                            @pie.Price.ToString("c")
+                            @pie.Price.ToString("c", new CultureInfo("en-IE"))
                         </h5>
                     </div>
                 </div>
