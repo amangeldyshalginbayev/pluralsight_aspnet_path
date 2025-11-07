@@ -24,7 +24,7 @@ if (app.Environment.IsDevelopment())
 //app.MapDefaultControllerRoute(); //"{controller=Home}/{action=Index}/{id?}}"
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id:int?}");
 
 DbInitializer.Seed(app);
 app.Run();
