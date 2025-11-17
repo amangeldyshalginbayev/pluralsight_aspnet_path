@@ -4,7 +4,7 @@ namespace BethanysPieShop.ViewModels;
 
 public class HomeViewModel
 {
-    public IEnumerable<Pie> PiesOfTheWeek { get; }
+    public IEnumerable<Pie> PiesOfTheWeek { get; set; }
 
     public HomeViewModel(IEnumerable<Pie> piesOfTheWeek)
     {
